@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.heiligbasil.knoxsdksample.MainActivity">
+
+    <TextView
+        android:id="@+id/logview_id"
+        android:layout_width="320dp"
+        android:layout_height="230dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/background"
+        android:gravity="bottom"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:scrollbars="vertical"
+        android:textColor="#3F51B5" />
+
+    <Button
+        android:id="@+id/toggleAdminBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logview_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/activate_admin" />
+
+    <Button
+        android:id="@+id/activateLicenseBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleAdminBtn"
+        android:layout_alignStart="@+id/toggleAdminBtn"
+        android:text="@string/activate_license" />
+
+    <Button
+        android:id="@+id/deactivateLicenseBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activateLicenseBtn"
+        android:layout_alignStart="@+id/activateLicenseBtn"
+        android:text="@string/deactivate_license" />
+
+    <Button
+        android:id="@+id/toggleCameraBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deactivateLicenseBtn"
+        android:layout_alignStart="@+id/deactivateLicenseBtn"
+        android:text="@string/toggle_camera" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="app_name">Knox SDK Sample</string>
+    <string name="enterprise_device_admin">Knox SDK Sample</string>
+    <string name="enterprise_device_admin_description">DeviceAdmin class</string>
+    <string name="activate_admin">Activate Admin</string>
+    <string name="deactivate_admin">Deactivate Admin</string>
+    <string name="activate_license">Activate license</string>
+    <string name="deactivate_license">Deactivate license</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="toggle_camera">Toggle Camera</string>
+
+    <!-- UI elements -->
+    <string name="activate_license_progress">Activating KPE License Key…</string>
+    <string name="deactivate_license_progress">Deactivating KPE License Key…</string>
+    <string name="permissions_failed">Failed to grant runtime permissions %1$s to package</string>
+    <string name="permissions_granted">Granted runtime permissions %1$s to package</string>
+    <string name="admin_cancelled">Device admin activation cancelled</string>
+    <string name="admin_enabled">Device admin enabled</string>
+    <string name="admin_disabled">Device admin disabled</string>
+    <string name="activating_admin">Activating device administrator…</string>
+    <string name="deactivating_admin">Deactivating device administrator… </string>
+    <string name="camera_state">Set camera enabled to: %1$b</string>
+    <string name="permission">com.samsung.android.knox.permission.KNOX_HW_CONTROL</string>
+
+    <!-- License activation messages -->
+    <string name="no_intent">License activation intent is not available</string>
+    <string name="no_intent_action">License activation intent action is not available</string>
+    <string name="kpe_activated_succesfully">KPE key activated successfully</string>
+
+    <!-- License deactivation messages -->
+    <string name="kpe_deactivated_succesfully">KPE key deactivated successfully</string>
+
+    <!-- KPE License Error Codes -->
+    <string name="err_kpe_internal">KPE: Internal error</string>
+    <string name="err_kpe_internal_server">KPE: Internal server error</string>
+    <string name="err_kpe_licence_invalid_license">KPE: Invalid license</string>
+    <string name="err_kpe_invalid_package_name">KPE: Invalid package name</string>
+    <string name="err_kpe_licence_terminated">KPE: License terminated</string>
+    <string name="err_kpe_network_disconnected">KPE: Network disconnected</string>
+    <string name="err_kpe_network_general">KPE: Network general error</string>
+    <string name="err_kpe_unknown">KPE: Error unknown</string>
+    <string name="err_kpe_code_unknown">KPE: Error code unknown %1$s, status %2$s</string>
+    <string name="err_kpe_not_current_date">KPE: Not current date</string>
+    <string name="err_kpe_sig_mismatch">KPE: Caller package signature mismatch</string>
+    <string name="err_kpe_ver_code_mismatch">KPE: Caller package version code mismatch</string>
+    <string name="err_kpe_null_params">KPE: NULL params</string>
+    <string name="err_kpe_user_disagrees_license_agreement">KPE: User disagrees EULA</string>
+
+    <!-- API level -->
+    <string name="api_level_message">This device does not support the new Knox SDK and Samsung
+        Knox Licence (SKL)
+        licensing scheme. API level %1$d detected.
+        Requires
+        level %2$d
+        .</string>
+    <string name="api_level_notice">App Requirement</string>
+
+</resources>

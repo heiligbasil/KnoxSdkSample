@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.heiligbasil.knoxsdksample">
+
+    <!-- Permissions TODO List permissions used by application -->
+    <uses-permission android:name="com.samsung.android.knox.permission.KNOX_HW_CONTROL" />
+    <uses-permission android:name="com.samsung.android.knox.permission." />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.heiligbasil.knoxsdksample.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- SampleAdminReceiver TODO Provide receiver for device admin receiver class -->
+        <receiver
+            android:name="com.heiligbasil.knoxsdksample.SampleAdminReceiver"
+            android:description="@string/enterprise_device_admin_description"
+            android:label="@string/enterprise_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_receiver" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Activate License TODO Provide receiver for Knox license activation results -->
+        <receiver android:name="com.heiligbasil.knoxsdksample.SampleLicenseReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.knox.intent.action.KNOX_LICENSE_STATUS" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
